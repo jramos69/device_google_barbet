@@ -68,4 +68,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "google/barbet/barbet:12/SQ1A.211205.008/7888514:user/release-keys"
 BUILD_THUMBPRINT := 12/SQ1A.211205.008/7888514:user/release-keys
 
+# Build fingerprint for SafetyNet
+ADDITIONAL_SYSTEM_PROPERTIES += \
+    ro.build.stock_fingerprint=$(BUILD_FINGERPRINT)
 
